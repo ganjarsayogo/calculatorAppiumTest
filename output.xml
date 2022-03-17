@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.8.0 on win32)" generated="20220317 14:10:20.211" rpa="false" schemaversion="2">
+<suite id="s1" name="Calculator" source="C:\Users\user\Desktop\calculatorAppiumTest\calculator.robot">
+<test id="s1-t1" name="Test 1">
+<kw name="Open Android Application">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220317 14:10:20.599" endtime="20220317 14:10:38.973"/>
+</kw>
+<status status="PASS" starttime="20220317 14:10:20.598" endtime="20220317 14:10:38.973"/>
+</kw>
+<kw name="Click Calculator Number">
+<arg>number=4</arg>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.LinearLayout[@content-desc="Numbers and basic operations"]/android.view.ViewGroup[1]/android.widget.Button[${number}]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220317 14:10:38.983" level="INFO">Clicking element '//android.widget.LinearLayout[@content-desc="Numbers and basic operations"]/android.view.ViewGroup[1]/android.widget.Button[4]'.</msg>
+<status status="PASS" starttime="20220317 14:10:38.975" endtime="20220317 14:10:41.431"/>
+</kw>
+<status status="PASS" starttime="20220317 14:10:38.974" endtime="20220317 14:10:41.432"/>
+</kw>
+<kw name="Click Calculator Operation">
+<arg>operation=plus</arg>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.Button[@content-desc="${operation}"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220317 14:10:41.446" level="INFO">Clicking element '//android.widget.Button[@content-desc="plus"]'.</msg>
+<status status="PASS" starttime="20220317 14:10:41.436" endtime="20220317 14:10:42.534"/>
+</kw>
+<status status="PASS" starttime="20220317 14:10:41.434" endtime="20220317 14:10:42.534"/>
+</kw>
+<kw name="Click Calculator Number">
+<arg>number=6</arg>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.LinearLayout[@content-desc="Numbers and basic operations"]/android.view.ViewGroup[1]/android.widget.Button[${number}]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220317 14:10:42.543" level="INFO">Clicking element '//android.widget.LinearLayout[@content-desc="Numbers and basic operations"]/android.view.ViewGroup[1]/android.widget.Button[6]'.</msg>
+<status status="PASS" starttime="20220317 14:10:42.536" endtime="20220317 14:10:43.538"/>
+</kw>
+<status status="PASS" starttime="20220317 14:10:42.535" endtime="20220317 14:10:43.538"/>
+</kw>
+<kw name="Click Calculator Operation">
+<arg>operation=equals</arg>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>//android.widget.Button[@content-desc="${operation}"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220317 14:10:43.551" level="INFO">Clicking element '//android.widget.Button[@content-desc="equals"]'.</msg>
+<status status="PASS" starttime="20220317 14:10:43.541" endtime="20220317 14:10:44.559"/>
+</kw>
+<status status="PASS" starttime="20220317 14:10:43.539" endtime="20220317 14:10:44.559"/>
+</kw>
+<kw name="Element Attribute Should Match" library="AppiumLibrary">
+<arg>com.android.calculator2:id/result</arg>
+<arg>text</arg>
+<arg>10</arg>
+<doc>Verify that an attribute of an element matches the expected criteria.</doc>
+<msg timestamp="20220317 14:10:45.815" level="INFO">Element 'com.android.calculator2:id/result' attribute 'text' is '10' </msg>
+<status status="PASS" starttime="20220317 14:10:44.560" endtime="20220317 14:10:45.816"/>
+</kw>
+<status status="PASS" starttime="20220317 14:10:20.598" endtime="20220317 14:10:45.817"/>
+</test>
+<status status="PASS" starttime="20220317 14:10:20.214" endtime="20220317 14:10:45.819"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Calculator">Calculator</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
