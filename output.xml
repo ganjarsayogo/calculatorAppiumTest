@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.8.0 on win32)" generated="20220321 19:09:04.585" rpa="false" schemaversion="2">
+<suite id="s1" name="Calculator" source="C:\Users\user\Desktop\calculatorAppiumTest\calculator.robot">
+<test id="s1-t1" name="Verify Operation Multiply and Divide">
+<kw name="Open Android Application" library="keywords">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220321 19:09:05.025" endtime="20220321 19:09:24.369"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:05.025" endtime="20220321 19:09:24.369"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=1</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:24.372" endtime="20220321 19:09:24.927"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:24.933" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_1'.</msg>
+<status status="PASS" starttime="20220321 19:09:24.927" endtime="20220321 19:09:25.169"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:24.371" endtime="20220321 19:09:25.170"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=0</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:25.172" endtime="20220321 19:09:25.789"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:25.796" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_0'.</msg>
+<status status="PASS" starttime="20220321 19:09:25.790" endtime="20220321 19:09:26.003"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:25.171" endtime="20220321 19:09:26.004"/>
+</kw>
+<kw name="Click Calculator Operation" library="keywords">
+<arg>operation=mul</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:26.005" endtime="20220321 19:09:26.594"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:26.601" level="INFO">Clicking element 'id=com.android.calculator2:id/op_mul'.</msg>
+<status status="PASS" starttime="20220321 19:09:26.594" endtime="20220321 19:09:26.775"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:26.004" endtime="20220321 19:09:26.776"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=5</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:26.778" endtime="20220321 19:09:27.388"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:27.394" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_5'.</msg>
+<status status="PASS" starttime="20220321 19:09:27.388" endtime="20220321 19:09:27.554"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:26.777" endtime="20220321 19:09:27.555"/>
+</kw>
+<kw name="Click Calculator Operation" library="keywords">
+<arg>operation=mul</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:27.557" endtime="20220321 19:09:28.175"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:28.181" level="INFO">Clicking element 'id=com.android.calculator2:id/op_mul'.</msg>
+<status status="PASS" starttime="20220321 19:09:28.175" endtime="20220321 19:09:28.341"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:27.556" endtime="20220321 19:09:28.342"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=4</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:28.344" endtime="20220321 19:09:28.929"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:28.936" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_4'.</msg>
+<status status="PASS" starttime="20220321 19:09:28.930" endtime="20220321 19:09:29.074"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:28.343" endtime="20220321 19:09:29.075"/>
+</kw>
+<kw name="Click Calculator Operation" library="keywords">
+<arg>operation=div</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:29.077" endtime="20220321 19:09:29.693"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:29.699" level="INFO">Clicking element 'id=com.android.calculator2:id/op_div'.</msg>
+<status status="PASS" starttime="20220321 19:09:29.693" endtime="20220321 19:09:29.843"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:29.076" endtime="20220321 19:09:29.844"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=8</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:29.846" endtime="20220321 19:09:30.419"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:30.426" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_8'.</msg>
+<status status="PASS" starttime="20220321 19:09:30.420" endtime="20220321 19:09:30.575"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:29.845" endtime="20220321 19:09:30.576"/>
+</kw>
+<kw name="Click Calculator Operation" library="keywords">
+<arg>operation=div</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:30.580" endtime="20220321 19:09:31.170"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:31.177" level="INFO">Clicking element 'id=com.android.calculator2:id/op_div'.</msg>
+<status status="PASS" starttime="20220321 19:09:31.170" endtime="20220321 19:09:31.313"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:30.579" endtime="20220321 19:09:31.313"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=5</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:31.315" endtime="20220321 19:09:31.930"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:31.937" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_5'.</msg>
+<status status="PASS" starttime="20220321 19:09:31.930" endtime="20220321 19:09:32.071"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:31.314" endtime="20220321 19:09:32.071"/>
+</kw>
+<kw name="Click Other Operation" library="keywords">
+<arg>other=eq</arg>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/${other}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:32.081" level="INFO">Clicking element 'id=com.android.calculator2:id/eq'.</msg>
+<status status="PASS" starttime="20220321 19:09:32.073" endtime="20220321 19:09:33.191"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:32.072" endtime="20220321 19:09:33.192"/>
+</kw>
+<kw name="Element Text Should Be" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/result</arg>
+<arg>5</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<msg timestamp="20220321 19:09:33.203" level="INFO">Verifying element 'id=com.android.calculator2:id/result' contains exactly text '5'.</msg>
+<status status="PASS" starttime="20220321 19:09:33.196" endtime="20220321 19:09:34.351"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:05.024" endtime="20220321 19:09:34.352"/>
+</test>
+<test id="s1-t2" name="Verify Operation with Comma">
+<kw name="Open Android Application" library="keywords">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220321 19:09:34.356" endtime="20220321 19:09:54.523"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:34.355" endtime="20220321 19:09:54.523"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=1</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:54.526" endtime="20220321 19:09:55.504"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:55.511" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_1'.</msg>
+<status status="PASS" starttime="20220321 19:09:55.505" endtime="20220321 19:09:55.801"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:54.525" endtime="20220321 19:09:55.801"/>
+</kw>
+<kw name="Click Other Operation" library="keywords">
+<arg>other=dec_point</arg>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/${other}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:55.810" level="INFO">Clicking element 'id=com.android.calculator2:id/dec_point'.</msg>
+<status status="PASS" starttime="20220321 19:09:55.803" endtime="20220321 19:09:56.506"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:55.802" endtime="20220321 19:09:56.506"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=5</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:56.509" endtime="20220321 19:09:57.113"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:57.121" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_5'.</msg>
+<status status="PASS" starttime="20220321 19:09:57.114" endtime="20220321 19:09:57.292"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:56.507" endtime="20220321 19:09:57.292"/>
+</kw>
+<kw name="Click Calculator Operation" library="keywords">
+<arg>operation=mul</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:57.295" endtime="20220321 19:09:57.915"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:57.922" level="INFO">Clicking element 'id=com.android.calculator2:id/op_mul'.</msg>
+<status status="PASS" starttime="20220321 19:09:57.915" endtime="20220321 19:09:58.089"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:57.294" endtime="20220321 19:09:58.089"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=2</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:09:58.091" endtime="20220321 19:09:58.716"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:58.723" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_2'.</msg>
+<status status="PASS" starttime="20220321 19:09:58.716" endtime="20220321 19:09:58.907"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:58.090" endtime="20220321 19:09:58.908"/>
+</kw>
+<kw name="Click Other Operation" library="keywords">
+<arg>other=eq</arg>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/${other}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:09:58.917" level="INFO">Clicking element 'id=com.android.calculator2:id/eq'.</msg>
+<status status="PASS" starttime="20220321 19:09:58.910" endtime="20220321 19:09:59.583"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:58.909" endtime="20220321 19:09:59.583"/>
+</kw>
+<kw name="Element Text Should Be" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/result</arg>
+<arg>3</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<msg timestamp="20220321 19:09:59.592" level="INFO">Verifying element 'id=com.android.calculator2:id/result' contains exactly text '3'.</msg>
+<status status="PASS" starttime="20220321 19:09:59.586" endtime="20220321 19:10:01.076"/>
+</kw>
+<status status="PASS" starttime="20220321 19:09:34.354" endtime="20220321 19:10:01.077"/>
+</test>
+<test id="s1-t3" name="Verify Clear Button Visible">
+<kw name="Open Android Application" library="keywords">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220321 19:10:01.082" endtime="20220321 19:10:21.164"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:01.081" endtime="20220321 19:10:21.165"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=1</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:10:21.174" endtime="20220321 19:10:22.174"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:22.181" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_1'.</msg>
+<status status="PASS" starttime="20220321 19:10:22.174" endtime="20220321 19:10:22.514"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:21.172" endtime="20220321 19:10:22.514"/>
+</kw>
+<kw name="Click Calculator Operation" library="keywords">
+<arg>operation=add</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:10:22.521" endtime="20220321 19:10:23.147"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:23.154" level="INFO">Clicking element 'id=com.android.calculator2:id/op_add'.</msg>
+<status status="PASS" starttime="20220321 19:10:23.148" endtime="20220321 19:10:23.353"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:22.520" endtime="20220321 19:10:23.354"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=2</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:10:23.357" endtime="20220321 19:10:23.983"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:23.991" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_2'.</msg>
+<status status="PASS" starttime="20220321 19:10:23.984" endtime="20220321 19:10:24.179"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:23.355" endtime="20220321 19:10:24.179"/>
+</kw>
+<kw name="Click Other Operation" library="keywords">
+<arg>other=eq</arg>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/${other}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:24.192" level="INFO">Clicking element 'id=com.android.calculator2:id/eq'.</msg>
+<status status="PASS" starttime="20220321 19:10:24.183" endtime="20220321 19:10:24.911"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:24.182" endtime="20220321 19:10:24.912"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/clr</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220321 19:10:24.913" endtime="20220321 19:10:26.101"/>
+</kw>
+<kw name="Page Should Not Contain Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/del</arg>
+<doc>Verifies that current page not contains `locator` element.</doc>
+<msg timestamp="20220321 19:10:26.209" level="INFO">Current page not contains element 'id=com.android.calculator2:id/del'.</msg>
+<status status="PASS" starttime="20220321 19:10:26.103" endtime="20220321 19:10:26.209"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:01.079" endtime="20220321 19:10:26.210"/>
+</test>
+<test id="s1-t4" name="Verify Operation Sum and Substract">
+<kw name="Open Android Application" library="keywords">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220321 19:10:26.215" endtime="20220321 19:10:47.504"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:26.214" endtime="20220321 19:10:47.505"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=1</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:10:47.512" endtime="20220321 19:10:48.345"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:48.351" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_1'.</msg>
+<status status="PASS" starttime="20220321 19:10:48.345" endtime="20220321 19:10:48.599"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:47.511" endtime="20220321 19:10:48.600"/>
+</kw>
+<kw name="Click Calculator Operation" library="keywords">
+<arg>operation=add</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:10:48.603" endtime="20220321 19:10:49.246"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:49.255" level="INFO">Clicking element 'id=com.android.calculator2:id/op_add'.</msg>
+<status status="PASS" starttime="20220321 19:10:49.246" endtime="20220321 19:10:49.466"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:48.601" endtime="20220321 19:10:49.466"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=2</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:10:49.469" endtime="20220321 19:10:50.097"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:50.105" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_2'.</msg>
+<status status="PASS" starttime="20220321 19:10:50.097" endtime="20220321 19:10:50.316"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:49.467" endtime="20220321 19:10:50.317"/>
+</kw>
+<kw name="Click Calculator Operation" library="keywords">
+<arg>operation=add</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:10:50.319" endtime="20220321 19:10:50.949"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:50.957" level="INFO">Clicking element 'id=com.android.calculator2:id/op_add'.</msg>
+<status status="PASS" starttime="20220321 19:10:50.950" endtime="20220321 19:10:51.148"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:50.318" endtime="20220321 19:10:51.148"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=3</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:10:51.149" endtime="20220321 19:10:51.781"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:51.789" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_3'.</msg>
+<status status="PASS" starttime="20220321 19:10:51.782" endtime="20220321 19:10:51.979"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:51.149" endtime="20220321 19:10:51.980"/>
+</kw>
+<kw name="Click Calculator Operation" library="keywords">
+<arg>operation=sub</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:10:51.984" endtime="20220321 19:10:52.585"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:52.592" level="INFO">Clicking element 'id=com.android.calculator2:id/op_sub'.</msg>
+<status status="PASS" starttime="20220321 19:10:52.585" endtime="20220321 19:10:52.766"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:51.983" endtime="20220321 19:10:52.766"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=4</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:10:52.770" endtime="20220321 19:10:53.354"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:53.363" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_4'.</msg>
+<status status="PASS" starttime="20220321 19:10:53.355" endtime="20220321 19:10:53.507"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:52.768" endtime="20220321 19:10:53.507"/>
+</kw>
+<kw name="Click Calculator Operation" library="keywords">
+<arg>operation=sub</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:10:53.509" endtime="20220321 19:10:54.141"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/op_${operation}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:54.148" level="INFO">Clicking element 'id=com.android.calculator2:id/op_sub'.</msg>
+<status status="PASS" starttime="20220321 19:10:54.142" endtime="20220321 19:10:54.286"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:53.508" endtime="20220321 19:10:54.286"/>
+</kw>
+<kw name="Click Calculator Number" library="keywords">
+<arg>number=5</arg>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<arg>5seconds</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220321 19:10:54.288" endtime="20220321 19:10:54.910"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/digit_${number}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:54.917" level="INFO">Clicking element 'id=com.android.calculator2:id/digit_5'.</msg>
+<status status="PASS" starttime="20220321 19:10:54.911" endtime="20220321 19:10:55.074"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:54.287" endtime="20220321 19:10:55.075"/>
+</kw>
+<kw name="Click Other Operation" library="keywords">
+<arg>other=eq</arg>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/${other}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220321 19:10:55.085" level="INFO">Clicking element 'id=com.android.calculator2:id/eq'.</msg>
+<status status="PASS" starttime="20220321 19:10:55.077" endtime="20220321 19:10:55.748"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:55.076" endtime="20220321 19:10:55.749"/>
+</kw>
+<kw name="Element Text Should Be" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/result</arg>
+<arg>−3</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<msg timestamp="20220321 19:10:55.758" level="INFO">Verifying element 'id=com.android.calculator2:id/result' contains exactly text '−3'.</msg>
+<status status="PASS" starttime="20220321 19:10:55.750" endtime="20220321 19:10:56.976"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:26.213" endtime="20220321 19:10:56.980"/>
+</test>
+<test id="s1-t5" name="Verify Delete Button Visible">
+<kw name="Open Android Application" library="keywords">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220321 19:10:56.985" endtime="20220321 19:11:18.047"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:56.984" endtime="20220321 19:11:18.047"/>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/del</arg>
+<doc>Verifies that current page contains `locator` element.</doc>
+<msg timestamp="20220321 19:11:18.866" level="INFO">Current page contains element 'id=com.android.calculator2:id/del'.</msg>
+<status status="PASS" starttime="20220321 19:11:18.051" endtime="20220321 19:11:18.867"/>
+</kw>
+<kw name="Page Should Not Contain Element" library="AppiumLibrary">
+<arg>id=com.android.calculator2:id/clr</arg>
+<doc>Verifies that current page not contains `locator` element.</doc>
+<msg timestamp="20220321 19:11:19.051" level="INFO">Current page not contains element 'id=com.android.calculator2:id/clr'.</msg>
+<status status="PASS" starttime="20220321 19:11:18.867" endtime="20220321 19:11:19.051"/>
+</kw>
+<status status="PASS" starttime="20220321 19:10:56.982" endtime="20220321 19:11:19.052"/>
+</test>
+<status status="PASS" starttime="20220321 19:09:04.589" endtime="20220321 19:11:19.056"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Calculator">Calculator</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
